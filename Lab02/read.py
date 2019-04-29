@@ -4,7 +4,7 @@ import tkFileDialog
 from PIL import Image, ImageTk
 import platform
 from tkinter import ttk
-
+from tkinter import messagebox
 import cv2
 import numpy as np
 nombre_img="" 
@@ -15,7 +15,7 @@ plataform=platform.system()
 raiz=Tk()
 raiz.title("Image Viewer")
 raiz.resizable(0,0)
-raiz.geometry("500x500+300+300")
+raiz.geometry("600x600+300+300")
 if plataform=="Windows":
 	raiz.iconbitmap("mail.ico")
 #miFrame=Frame()
@@ -51,9 +51,29 @@ def cargar_img():
 	label.place(x=60, y=150)
 	mainloop()
 
+def sumar():
+	var=int(cuadroSuma.get())
+	#if img_cv==None:	
+	#	messagebox.showinfo(message="No se ha cargado una imagen", title="Error")	
+	temp1=img_cv
+	temp1=img_sum(temp1,var)
+	ims = Image.fromarray(temp1)
+	imgs = ImageTk.PhotoImage(image=ims) 	
+	label_imgsum=Label(image=imgs)
+	label_imgsum.place(x=300,y=150)
+	suma.mainloop()
+	
+
+#Cajas
+cuadroSuma=Entry(raiz)
+cuadroSuma.grid(row=2,column=3,padx=0,pady=0)
+
+
 #Button(self,text="Cargar Imagen",command=self.cargar_img).place(x=100,y=100)
 botonBuscar=Button(raiz,text="Cargar Imagen",command = cargar_img)
+botonSumar=Button(raiz,text="Sumar",command = sumar)
 botonBuscar.grid(row=2,column=1)
+botonSumar.grid(row=2,column=2)
 
 
 raiz.mainloop()
