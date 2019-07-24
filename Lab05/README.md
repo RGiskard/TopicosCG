@@ -17,9 +17,13 @@ nvcc -O3 -g -o template-matching bmp_util.c kernel.cu main.cu utils.cu --compile
 
 ### template 1 Ojo
 
+![alt text](https://github.com/RGiskard/TopicosCG/blob/master/Lab05/ojito.bmp)
+
 ![alt text](https://raw.githubusercontent.com/RGiskard/TopicosCG/master/Lab05/sharpeiOjo.bmp)
 
 ### template 2 Arruga
+
+![alt text](https://github.com/RGiskard/TopicosCG/blob/master/Lab05/ruga.bmp)
 
 ![alt text](https://raw.githubusercontent.com/RGiskard/TopicosCG/master/Lab05/sharpeiRuga.bmp)
 
