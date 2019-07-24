@@ -1,0 +1,30 @@
+# Laboratorio 5 template Matching
+
+Template Matching ejemplo de ejecución
+## Requirements
+
+* CUDA
+* c++
+
+## Running
+
+```bash
+nvcc -O3 -g -o template-matching bmp_util.c kernel.cu main.cu utils.cu --compiler-options -Wall,-Wextra,-Wno-unused-result
+
+```
+
+## Screenshots
+
+### template 1 Ojo
+
+![alt text](https://raw.githubusercontent.com/RGiskard/TopicosCG/master/Lab05/sharpeiOjo.bmp)
+
+### template 2 Arruga
+
+![alt text](https://raw.githubusercontent.com/RGiskard/TopicosCG/master/Lab05/sharpeiRuga.bmp)
+
+
+
+
+
+
