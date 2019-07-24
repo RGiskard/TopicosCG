@@ -16,9 +16,12 @@ nvcc Imagen.h main.cu -o program -lm -lpthread -lX11
 
 ## Screenshots
 
-### Ejecución interfaz gráfica
+### Ejecución interfaz gráfica (Secuencial)
 
 ![alt text](https://raw.githubusercontent.com/RGiskard/TopicosCG/master/Final/Data/haarseq1.png)
+
+### Ejecución interfaz gráfica (Paralelo Colab)
+![alt text](https://github.com/RGiskard/TopicosCG/blob/master/Final/Data/exeColab.png)
 
 ## Tabla Comparativa tiempos
 | Resolucion  | CPU  | GPU |
