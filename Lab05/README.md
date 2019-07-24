@@ -11,6 +11,7 @@ Template Matching ejemplo de ejecución
 ```bash
 nvcc -O3 -g -o template-matching bmp_util.c kernel.cu main.cu utils.cu --compiler-options -Wall,-Wextra,-Wno-unused-result
 
+./template-matching archivoEntrada.bmp archivoTemplate.bmp archivoSalida.bmp
 ```
 
 ## Screenshots
