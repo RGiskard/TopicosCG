@@ -16,6 +16,10 @@ nvcc -O3 -g -o template-matching bmp_util.c kernel.cu main.cu utils.cu --compile
 
 ## Screenshots
 
+### Ejecución en Colab
+
+![alt text](https://github.com/RGiskard/TopicosCG/blob/master/Lab05/Execolab.png)
+
 ### template 1 Ojo
 
 ![alt text](https://github.com/RGiskard/TopicosCG/blob/master/Lab05/ojito.bmp)
